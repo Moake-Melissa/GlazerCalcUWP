@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlazerCalcUWP", "GlazerCalcUWP\GlazerCalcUWP.csproj", "{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|ARM.Build.0 = Debug|ARM
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|ARM.Deploy.0 = Debug|ARM
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|x64.ActiveCfg = Debug|x64
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|x64.Build.0 = Debug|x64
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|x64.Deploy.0 = Debug|x64
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|x86.ActiveCfg = Debug|x86
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|x86.Build.0 = Debug|x86
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Debug|x86.Deploy.0 = Debug|x86
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|ARM.ActiveCfg = Release|ARM
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|ARM.Build.0 = Release|ARM
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|ARM.Deploy.0 = Release|ARM
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|x64.ActiveCfg = Release|x64
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|x64.Build.0 = Release|x64
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|x64.Deploy.0 = Release|x64
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|x86.ActiveCfg = Release|x86
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|x86.Build.0 = Release|x86
+		{F26C4E81-99BD-4A72-A9FD-A9D6DC62CAFF}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CD2C09A-C818-4A05-8CAF-BB7CCE32EEC7}
+	EndGlobalSection
+EndGlobal
