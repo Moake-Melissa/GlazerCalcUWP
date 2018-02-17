@@ -18,11 +18,9 @@ using Windows.UI.Xaml.Navigation;
 
 namespace GlazerCalcUWP
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
+        // Variables used
         double width, height, woodLength, glassArea;
         int quantity;
         string tint;
@@ -31,17 +29,17 @@ namespace GlazerCalcUWP
         const double MIN_HEIGHT = 0.75;
         const double MAX_HEIGHT = 3.0;
         DateTime orderDate;
+
+
     
         public MainPage()
         {
             this.InitializeComponent();
         }
 
-        private void tintColor_Checked(object sender, RoutedEventArgs e)
-        {
 
-        }
 
+        // Validates the width input
         private void validateWidth(object sender, KeyRoutedEventArgs e)
         {
             string errorMessage = "";
@@ -71,6 +69,8 @@ namespace GlazerCalcUWP
             errorsWidth.Text = errorMessage;
         }
 
+
+        //Validates the height input
         private void validateHeight(object sender, KeyRoutedEventArgs e)
         {
             string errorMessage = "";
@@ -101,6 +101,7 @@ namespace GlazerCalcUWP
         }
 
 
+        // Submit Button Clicked. Checks to make sure the height and width aren't empty as well as if there were any errors when validating. 
         private async void submitButton_Click(object sender, RoutedEventArgs e)
         {
             if (errorsWidth.Text == "" && errorsHeight.Text == "" && widthBox.Text != "" && heightBox.Text != "")
