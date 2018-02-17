@@ -8,6 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid HorizontalAlignment="Center" Height="498" Margin="160,74,142,68" VerticalAlignment="Center" Width="722">
+            <TextBlock HorizontalAlignment="Center" Margin="2,18,0,0" Text="Glazer Calculator" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" FontFamily="Segoe UI"/>
+            <TextBlock HorizontalAlignment="Left" Margin="64,126,0,0" Text="Give the width of the window between 0.5 and 5.0 meters:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Margin="542,126,0,0" Text="" VerticalAlignment="Top" Width="122" x:Name="widthBox" KeyUp="validateWidth"/>
+            <TextBlock HorizontalAlignment="Left" Margin="64,216,0,0" Text="Give the height of the window between .75 and 3.0 meters:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Margin="542,216,0,0" Text="" VerticalAlignment="Top" Width="122" x:Name="heightBox" KeyUp="validateHeight" />
+            <TextBlock HorizontalAlignment="Left" Margin="64,276,0,0" Text="Select a Window Tint:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+            <RadioButton Name="tintColor1" GroupName="tint" Content="Black" HorizontalAlignment="Left" Margin="116,310,0,0" VerticalAlignment="Top" IsChecked="True" />
+            <RadioButton Name="tintColor2" GroupName="tint" Content="Brown" HorizontalAlignment="Left" Margin="254,310,0,0" VerticalAlignment="Top" />
+            <RadioButton Name="tintColor3" GroupName="tint" Content="Blue" HorizontalAlignment="Left" Margin="386,310,0,0" VerticalAlignment="Top" />
+            <TextBlock HorizontalAlignment="Left" Margin="64,368,0,0" Text="How many do you want?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+            <Slider x:Name="quantitySlider" HorizontalAlignment="Left" Margin="116,408,0,0" VerticalAlignment="Top" Width="228" Grid.Row="6" Grid.Column="1" Maximum="100" Minimum="1"/>
+            <Button Content="Submit" x:Name="submitButton" HorizontalAlignment="Left" Margin="542,428,0,0" VerticalAlignment="Top" FontSize="18" Width="120" Height="40" Click="submitButton_Click"/>
+            <TextBlock x:Name="errorsWidth" HorizontalAlignment="Center" Margin="65,98,260,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="Red" Width="397" Height="34"/>
+            <TextBlock x:Name="errorsHeight" HorizontalAlignment="Center" Margin="65,188,260,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="Red" Width="397" Height="34"/>
+            <TextBlock HorizontalAlignment="Left" Margin="274,368,0,0" x:Name="quantityBox" Text="{Binding ElementName=quantitySlider,Path=Value}" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" FontSize="18" Height="29"/>
+        </Grid>
     </Grid>
 </Page>
